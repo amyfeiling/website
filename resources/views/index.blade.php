@@ -9,19 +9,19 @@ $thisPage = "Home";
 	
 	<article class="spotlight">
 		<header class="subsection">TOP REVIEWS</header>
-		<a href="/books/reviews"><img src="./images/top_reviews.jpg" /></a>
+		<a href="/books/reviews"><img src="/images/top_reviews.jpg" /></a>
 	</article>
 	
 	<article class="spotlight">
 		<header class="subsection">RECENTLY ADDED</header>
-		<a href="/books/recent"><img src="./images/recently_added.jpg" /></a>
+		<a href="/books/recent"><img src="/images/recently_added.jpg" /></a>
 	</article>
 	
 	@if(Auth::check())
 	
 	<article class="spotlight">				
 		<header class="subsection">MY BOOKS</header>
-		<a href="/mybooks"><img src="./images/my_books.jpg" /></a>
+		<a href="/mybooks"><img src="/images/my_books.jpg" /></a>
 	</article>
 
 	@else
