@@ -64,9 +64,9 @@ class BooksController extends Controller
         ]);
 
 
-        auth()->user()->publish(new Book(request(['title', 'author', 'description', 'bookImage'])));
+        //auth()->user()->publish(new Book(request(['title', 'author', 'description', 'bookImage'])));
         //Create a new book using request data
-        /*$book = new Book;
+        $book = new Book;
 
         $book->title = request('title');
         $book->author = request('author');
@@ -77,7 +77,7 @@ class BooksController extends Controller
 
         //Save to database
         $book->save();
-        */
+        
 
 
         $genres = request('genre');

@@ -29,7 +29,7 @@ $thisPage = "Home";
 	<article class="spotlight">		
 		<header class="subsection">SIGN IN</header>
 		<section id="signin">
-			<form method="POST" action="./login" id="login-form">
+			<form method="POST" action="/login" id="login-form">
 				{{ csrf_field() }}
 				<input type="text" name="username" placeholder="Username" class="inputfield" maxlength="50" required value="" />
 				
@@ -38,7 +38,7 @@ $thisPage = "Home";
 				<input type="submit" id="login" class="inputfield submit" value="Login" />
 
 			</form>
-			<a href="./register" id="signin_newuser">New User</a>
+			<a href="/register" id="signin_newuser">New User</a>
 		</section>
 	</article>
 
