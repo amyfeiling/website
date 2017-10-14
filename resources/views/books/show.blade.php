@@ -21,7 +21,7 @@ $user_id = Auth::user()->id;
 $mybooks = \App\MyBooks::where('book_id', '=', $book_id)->where('user_id', '=', $user_id)->first();
 
 //echo($mybooks->status);
-$rating = ($mybooks->rating/5)*100;
+//$rating = ($mybooks->rating/5)*100;
 
 ?>
 
@@ -58,7 +58,7 @@ $rating = ($mybooks->rating/5)*100;
 		@if(Auth::check())
 
 		<!--<section class="rating_bar">
-			<section class="rating" style="width:{{ $rating }}%"></section>
+			<section class="rating" style="width:"></section>
 		</section>-->
 
 		<div id="rateYo" data-rating=""></div>
